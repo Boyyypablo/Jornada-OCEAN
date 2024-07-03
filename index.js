@@ -5,4 +5,19 @@ app.get('/', function (req, res) {
   res.send('Hello World')
 })
 
-app.listen(3000)
+// Desafio: criar endpoint /oi que exibe "Olá, mundo!"
+app.get('/oi', function (req, res) {
+  res.send('Olá, mundo!')
+})
+
+const lista = ('rick sanchez','morty smith','summer smith')
+
+// read all
+app.get('/item', function (req, res) {
+
+  res.send('read all')
+})
+ 
+
+app.listen(3000)  
+
